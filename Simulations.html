@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulations - PhishGuard Pro</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -13,17 +14,29 @@
         }
         .glass {
             background: rgba(255, 255, 255, 0.25);
-            padding: 2rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
             border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body class="min-h-screen text-white">
-    <header class="bg-gray-900 p-4">
+    <nav class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-blue-400"><i class="fas fa-shield-alt mr-2"></i>PhishGuard Pro</h1>
+            <a href="index.html" class="text-2xl font-bold text-blue-400"><i class="fas fa-shield-alt mr-2"></i>PhishGuard Pro</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="simulations.html" class="hover:text-blue-400 transition">Simulations</a></li>
+                <li><a href="index.html#history" class="hover:text-blue-400 transition">History</a></li>
+                <li><a href="analytics.html" class="hover:text-blue-400 transition">Analytics</a></li>
+                <li><a href="trainings.html" class="hover:text-blue-400 transition">Trainings</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
     <main class="container mx-auto px-4 py-20">
         <h2 class="text-3xl font-bold mb-8 text-center">Simulations</h2>
@@ -32,7 +45,7 @@
         <div class="glass p-6 rounded-lg text-center cursor-pointer hover:shadow-lg transition duration-300">
             <h3 class="text-xl font-semibold mb-4">Operation Firewall</h3>
             <p>Join a covert cybersecurity agency to protect InnovateTech from cyber threats.</p>
-            <button onclick="window.location.href='Operation_Firewall.html'" 
+            <button onclick="alert('Operation Firewall simulation coming soon!')" 
                 class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-4">
                 Start Mission
             </button>
@@ -42,7 +55,7 @@
         <section id="gamified-simulations" class="mt-12">
             <h3 class="text-2xl font-bold mb-6 text-center">Gamified Simulations</h3>
             <div class="glass p-6 rounded-lg text-center cursor-pointer hover:shadow-lg transition duration-300"
-                 onclick="window.location.href='operation-firewall.html'">
+                 onclick="alert('Operation Firewall simulation coming soon!')">
                 <h4 class="text-xl font-semibold mb-2">Operation Firewall</h4>
                 <p>Embark on a gamified journey to defend against cyber threats.</p>
             </div>
